@@ -21,6 +21,9 @@
     .footer {
         padding: 30px 5%;
     }
+    .pageContent {
+        padding: 30px 2%;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -80,5 +83,25 @@
     }
     .footer_linksBlock>a, .footer_social {
         margin: 0 10px;
+    }
+    .tinkwall_sidebar {
+        padding: 0;
+    }
+    .sidebar_panel_list {
+        padding: 10px;
+    }
+    .groupLink_avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .groupLink_description span {
+        font-size: 13px;
+    }
+    .groupLink_title {
+        margin-bottom: 0;
+    }
+    a.followGroupButton {
+        padding: 7px 15px;
     }
 }
