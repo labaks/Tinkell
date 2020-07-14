@@ -240,13 +240,13 @@ a.menuBurger:hover {
 .tags {
     width: 56%;
     margin: 0 auto 15px;
-    overflow: hidden;
 }
 
 .tagWrapper {
     float: left;
     width: 25%;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .tagButton {
@@ -264,9 +264,43 @@ a.menuBurger:hover {
     cursor: pointer;
 }
 
-.tagButton:hover {
+.tagWrapper:hover .tagButton {
     background: #2bbeb6;
     color: white;
+    border-radius: 28px 28px 0 0;
+}
+
+.tagWrapper:hover .subtags {
+    display: block;
+}
+
+.clear {
+    clear: both;
+    position: relative;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.subtags {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    background: #2bbeb6;
+    border-radius: 0 0 28px 28px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 94%;
+    border-top: 1px solid white;
+    left: 3%;
+}
+
+a.subtagButton {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .sideButtons {
