@@ -537,6 +537,25 @@ a.timeRangeFilter_button {
     display: block;
 }
 
+.pagination {
+    text-align: right;
+    padding: 0 30px;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.pagination li a {
+    color: #d7d7d7;
+}
+
+.pagination .activePage a {
+    color: #303030;
+    font-weight: bold;
+}
+
 /* Footer */
 
 .footer {

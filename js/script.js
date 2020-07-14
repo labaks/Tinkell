@@ -33,5 +33,10 @@ jQuery(function ($) {
 var setActiveSearchButton = function (e) {
     $(e).siblings().removeClass('active');
     $(e).addClass('active');
+}
 
+var setActivePaginationPage = function(e) {
+    var target = $(e).parent();
+    target.siblings().removeClass('activePage');
+    target.addClass('activePage');
 }
