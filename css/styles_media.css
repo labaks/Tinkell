@@ -43,6 +43,9 @@
     .more {
         padding-top: 15px;
     }
+    .comments_inputBlock input[type="text"] {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -103,5 +106,8 @@
     }
     a.followGroupButton {
         padding: 7px 15px;
+    }
+    .comments_inputBlock input[type="text"] {
+        width: 60%;
     }
 }

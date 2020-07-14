@@ -8,6 +8,26 @@ a, a:hover, a:visited {
     text-decoration: none;
 }
 
+a.button {
+    border-radius: 20px;
+    background: #2bbeb6;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -447,15 +467,13 @@ a.subtagButton {
 }
 
 .mauBlock_user_avatar {
-    border-radius: 100%;
-    width: 22%;
-    vertical-align: middle;
+    width: 70px;
+    height: 70px;
 }
 
 .mauBlock_user_name {
     vertical-align: middle;
     font-weight: bold;
-    margin-left: 20px;
 }
 
 /* Most Popular Groups */
@@ -477,11 +495,7 @@ a.subtagButton {
 }
 
 a.timeRangeFilter_button {
-    display: inline-block;
     padding: 10px 40px;
-    background: #2bbeb6;
-    color: white;
-    border-radius: 20px;
     margin: 0 10px;
 }
 
@@ -541,9 +555,6 @@ a.timeRangeFilter_button {
 .member {
     width: 60px;
     height: 60px;
-    display: inline-block;
-    border-radius: 100%;
-    background-size: cover !important;
     vertical-align: top;
     margin-right: 10px;
 }
@@ -555,6 +566,7 @@ a.timeRangeFilter_button {
     box-sizing: border-box;
     margin-right: 0;
     font-size: 20px;
+    border-radius: 100%;
 }
 
 .group_sideBlock_membersCount {
@@ -811,11 +823,6 @@ a.dialog_button {
 .post_autor {
     width: 40px;
     height: 40px;
-    display: inline-block;
-    background-size: contain;
-    border-radius: 100%;
-    vertical-align: middle;
-    margin-right: 15px;
 }
 
 .post_autorName {
@@ -917,10 +924,7 @@ a.dialog_button {
 .groupLink_avatar {
     width: 40px;
     height: 40px;
-    border-radius: 100%;
     margin-right: 10px;
-    background-size: cover;
-    display: inline-block;
 }
 
 .groupLink_description {
@@ -938,10 +942,6 @@ a.dialog_button {
 }
 
 a.followGroupButton {
-    border-radius: 20px;
-    background: #2bbeb6;
-    color: white;
-    padding: 10px 20px;
     float: right;
 }
 
@@ -1122,3 +1122,81 @@ a.comments_loadMore {
     margin-bottom: 15px;
 }
 
+/* Chosen Group */
+
+.chosenGroup_header {
+    position: relative;
+    text-align: center;
+}
+
+.chosenGroup_header:after {
+    content: '';
+    display: block;
+    width: 80%;
+    position: absolute;
+    border: 3px solid #2bbeb6;
+    bottom: -6px;
+    left: 10%;
+    border-radius: 20px;
+}
+
+.chosenGroup_wallpaper {
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.chosenGroup_creator {
+    margin-bottom: 30px;
+}
+
+.chosenGroup_creator_avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.chosenGroup_creator_name {
+    font-weight: bold;
+}
+
+.chosenGroup_title {
+    font-size: 50px;
+}
+
+.chosenGroup_subtitle {
+    padding: 15px;
+}
+
+.chosenGroup_subtitle span {
+    margin: 0 20px;
+}
+
+.chosenGroup_subtitle span i {
+    margin-right: 10px;
+    color: #2bbeb6;
+}
+
+.sidebar_panel_text {
+    padding: 15px;
+    margin: 0;
+}
+
+.sidebar_panel_footer {
+    border-top: 1px solid #d4d4d4;
+    padding: 15px;
+}
+
+.sidebar_panel_footer p {
+    margin: 0 0 10px;
+}
+
+.sidebar_panel_footer p i {
+    color: #2bbeb6;
+    margin-right: 10px;
+}
+
+.chosenGroup_createdDate {
+    font-weight: bold;
+}
