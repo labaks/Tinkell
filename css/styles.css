@@ -84,6 +84,7 @@ body {
     padding: 10px 20px;
     width: 100%;
     left: 0;
+    z-index: 1000;
 }
 
 .logoBlock_menu li {
@@ -333,7 +334,7 @@ a.subtagButton {
     font-size: 30px;
 }
 
-.blockTitle:before {
+.blockTitle:before, .postedBy:before {
     content: '';
     display: block;
     position: absolute;
@@ -771,14 +772,14 @@ a.dialog_button {
     background: #ebf8fa;
 }
 
-.tinkwall_posts {
+.tinkwall_posts, .chosenArticle_mainContent {
     width: 70%;
     display: inline-block;
     padding: 0 10px;
     box-sizing: border-box;
 }
 
-.tinkwall_sidebar {
+.tinkwall_sidebar, .chosenArticle_sidebar {
     width: 29%;
     display: inline-block;
     vertical-align: top;
@@ -943,3 +944,181 @@ a.followGroupButton {
     padding: 10px 20px;
     float: right;
 }
+
+/* Chosen Article */
+
+.chosenArticle {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.postedBy {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.postedBy_avatar {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.postedBy_name {
+    font-weight: bold;
+}
+
+.chosenArticle_img {
+    border-radius: 28px;
+}
+
+.chosenArticle_title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.chosenArticle_subtitle span {
+    margin-right: 15px;
+}
+
+.chosenArticle_subtitle a {
+    margin: 0 15px;
+}
+
+.chosenArticle_subtitle a:hover {
+    font-weight: bold;
+}
+
+.chosenArticle_subtitle a i {
+    margin-right: 10px;
+    color: #2bbeb6;
+}
+
+.chosenArticle_text {
+
+}
+
+.comments {
+
+}
+
+.comments_title {
+    color: #959595;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.comments_inputBlock {
+    border: 2px solid #d4d4d4;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.comments_inputBlock input[type="text"] {
+    width: 75%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: 34px;
+}
+
+.comments_inputBlock_button {
+    float: right;
+    display: block;
+    margin: 0 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.comments_inputBlock_button.signUpButton {
+    color: #2bbeb6;
+    border: 1px solid #2bbeb6;
+}
+
+.comments_inputBlock_button.loginButton,
+.comments_inputBlock_button.loginButton:hover {
+    padding: 10px 20px;
+}
+
+.comments_commentsList {
+    
+}
+
+.comment {
+    padding: 5px 30px 5px 60px;
+}
+
+.comment_header {
+    margin-left: -55px;
+}
+
+.comment_header_avatar {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comment_header_name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment_header_date {
+    color: #959595;
+}
+
+.comment_text {
+    margin: 0 0 15px;
+
+}
+
+.comment_footer {
+    margin-bottom: 15px;
+}
+
+.comment_footer a {
+    color: #2bbeb6;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.comment_footer a:hover {
+    text-decoration: underline;
+}
+
+.subcomments .comment {
+    padding-right: 0;
+}
+
+a.comments_loadMore {
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #2bbeb6;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tinkell | Article</title>
+    <link rel="stylesheet"
+          href="../css/styles.css">
+    <link rel="stylesheet"
+          href="../css/styles_media.css">
+    <link rel="stylesheet"
+          href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logoBlock">
+            <div class="logo">
+                <a href="#"
+                   class="logoBlock_link"
+                   onclick="openLogoMenu();"></a>
+                <ul class="logoBlock_menu">
+                    <li><a href="../index.html"
+                           class="logoBlock_menu_home">Home</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_toRead">To read</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_topGroups">Top groups</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_newGroups">New groups</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBlock">
+            <a href="tinkwall.html"
+               class="searchBlock_tinkwall"></a>
+            <div class="searchBlockInputGroup">
+                <input type="text"
+                       placeholder="Search...">
+                <a href="#"
+                   class="fas fa-search"></a>
+            </div>
+            <div class="searchBlock_buttonsBlock">
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons active">Groups</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">To Read</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">All</a>
+            </div>
+        </div>
+        <div class="loginBlock">
+            <a href="#"
+               class="signupButton"
+               onclick="openDialog('signupDialog');">Sign up</a>
+            <a href="#"
+               class="loginButton"
+               onclick="openDialog('loginDialog');">Log in
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#"
+               class="menuBurger fas fa-bars"></a>
+        </div>
+    </div>
+    <div class="contentBlock chosenArticle">
+        <div class="chosenArticle_mainContent">
+            <div class="postedBy">
+                <div class="postedBy_avatar"
+                     style="background-image: url(../img/man.jpg);"></div>
+                <span>Posted by</span>
+                <a href="#"
+                   class="postedBy_name">Clara Keys</a>
+            </div>
+            <img src="../img/4.jpg"
+                 class="chosenArticle_img">
+            <h1 class="chosenArticle_title">Quisque eu mollis mauris</h1>
+            <div class="chosenArticle_subtitle">
+                <span>18 June, 2020</span>
+                <a href="#"
+                   class="chosenArticle_subtitle_seen"><i class="far fa-eye"></i>600</a>
+                <a href="#"
+                   class="chosenArticle_subtitle_comments"><i class="fas fa-comment-alt"></i>99 Comments</a>
+                <a href="#"
+                   class="chosenArticle_subtitle_share"><i class="fas fa-share-alt"></i>Share</a>
+                <a href="#"
+                   class="chosenArticle_subtitle_like"><i class="far fa-heart"></i>Like</a>
+            </div>
+            <div class="chosenArticle_text">
+                <p>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor.</p>
+                <p>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor.</p>
+                <p>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor.</p>
+            </div>
+            <div class="comments">
+                <h2 class="comments_title">Comments</h2>
+                <div class="comments_inputBlock">
+                    <input type="text"
+                           placeholder="To leave a comment Log In or Sign up" />
+                    <a href="#"
+                       onclick="openDialog('loginDialog')"
+                       class="comments_inputBlock_button loginButton">Log in</a>
+                    <a href="#"
+                       onclick="openDialog('signupDialog');"
+                       class="comments_inputBlock_button signUpButton">Sign up</a>
+                </div>
+                <ul class="comments_commentsList">
+                    <li class="comment">
+                        <div class="comment_header">
+                            <div class="comment_header_avatar"
+                                 style="background-image: url(../img/man.jpg);"></div>
+                            <span class="comment_header_name">Sedrik</span>
+                            <span class="comment_header_date">1 mounth ago</span>
+                        </div>
+                        <p class="comment_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</p>
+                        <div class="comment_footer">
+                            <a href="#">Reply</a>
+                            <a href="#">1 Reply</a>
+                        </div>
+                        <ul class="subcomments">
+                            <li class="comment">
+                                <div class="comment_header">
+                                    <div class="comment_header_avatar"
+                                         style="background-image: url(../img/woman.jpg);"></div>
+                                    <span class="comment_header_name">Lauren</span>
+                                    <span class="comment_header_date">10 days ago</span>
+                                </div>
+                                <p class="comment_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</p>
+                                <div class="comment_footer">
+                                    <a href="#">Reply</a>
+                                    <a href="#">0 Reply</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="comment">
+                        <div class="comment_header">
+                            <div class="comment_header_avatar"
+                                 style="background-image: url(../img/man.jpg);"></div>
+                            <span class="comment_header_name">Sedrik</span>
+                            <span class="comment_header_date">1 mounth ago</span>
+                        </div>
+                        <p class="comment_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</p>
+                        <div class="comment_footer">
+                            <a href="#">Reply</a>
+                            <a href="#">1 Reply</a>
+                        </div>
+                    </li>
+                    <li class="comment">
+                        <div class="comment_header">
+                            <div class="comment_header_avatar"
+                                 style="background-image: url(../img/man.jpg);"></div>
+                            <span class="comment_header_name">Sedrik</span>
+                            <span class="comment_header_date">1 mounth ago</span>
+                        </div>
+                        <p class="comment_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</p>
+                        <div class="comment_footer">
+                            <a href="#">Reply</a>
+                            <a href="#">1 Reply</a>
+                        </div>
+                    </li>
+                    <li class="comment">
+                        <div class="comment_header">
+                            <div class="comment_header_avatar"
+                                 style="background-image: url(../img/man.jpg);"></div>
+                            <span class="comment_header_name">Sedrik</span>
+                            <span class="comment_header_date">1 mounth ago</span>
+                        </div>
+                        <p class="comment_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</p>
+                        <div class="comment_footer">
+                            <a href="#">Reply</a>
+                            <a href="#">1 Reply</a>
+                        </div>
+                        <ul class="subcomments">
+                            <li class="comment">
+                                <div class="comment_header">
+                                    <div class="comment_header_avatar"
+                                         style="background-image: url(../img/woman.jpg);"></div>
+                                    <span class="comment_header_name">Lauren</span>
+                                    <span class="comment_header_date">10 days ago</span>
+                                </div>
+                                <p class="comment_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor. Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</p>
+                                <div class="comment_footer">
+                                    <a href="#">Reply</a>
+                                    <a href="#">0 Reply</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#"
+                   class="comments_loadMore">Load more</a>
+
+            </div>
+
+        </div>
+        <div class="chosenArticle_sidebar"></div>
+        <h4 class="subtitle">You may also like</h4>
+        <div class="articlesCarousel">
+            <div>
+                <div class="article">
+                    <img class="article_img"
+                         src="../img/1.jpg">
+                    <p class="article_title">Cras rhoncus suscipit eros.</p>
+                    <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada.</span>
+                </div>
+                <div class="article">
+                    <img class="article_img"
+                         src="../img/2.jpg">
+                    <p class="article_title">Cras rhoncus suscipit eros.</p>
+                    <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis.</span>
+                </div>
+                <div class="article">
+                    <img class="article_img"
+                         src="../img/3.jpg">
+                    <p class="article_title">Cras rhoncus suscipit eros.</p>
+                    <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis.</span>
+                </div>
+            </div>
+            <a href="#"
+               class="leftButton fas fa-arrow-left"></a>
+            <a href="#"
+               class="rightButton fas fa-arrow-right"></a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logoBlock">
+            <div class="logo"></div>
+        </div>
+        <div class="footer_linksBlock">
+            <a href="#"
+               class="">Terms of Use</a>
+            <a href="#"
+               class="">Contact us</a>
+            <a href="#">tinkell@tkl.com</a>
+            <div class="footer_social">
+                <a href="#"
+                   class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#"
+                   class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                   class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_subscribeBlock">
+            <span>Subscribe to our newsletter</span>
+            <div class="inputWithIcon">
+                <input type="text"
+                       placeholder="Your Email">
+                <a href="#"
+                   class="inputSubmit fas fa-arrow-right"></a>
+            </div>
+        </div>
+    </div>
+    <div id="loginDialog"
+         class="dialogBackground">
+        <div class="dialog loginDialog">
+            <a href="#"
+               onclick="closeDialog('loginDialog')"
+               class="dialog_close fas fa-times"></a>
+            <div class="dialog_content">
+                <div class="logo"></div>
+                <h2 class="dialog_title">Login</h2>
+                <input type="text"
+                       class="dialog_input"
+                       placeholder="User Name">
+                <input type="text"
+                       class="dialog_input"
+                       placeholder="Password">
+                <a href="#"
+                   class="dialog_button">Login</a>
+                <div class="dialog_social">
+                    <span>Or Login with</span>
+                    <a href="#"
+                       class="googlePlus fab fa-google-plus-square"></a>
+                    <a href="#"
+                       class="facebook fab fa-facebook-square"></a>
+                    <a href="#"
+                       class="twitter fab fa-twitter-square"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signupDialog"
+         class="dialogBackground">
+        <div class="dialog">
+            <a href="#"
+               onclick="closeDialog('signupDialog')"
+               class="dialog_close fas fa-times"></a>
+            <div class="dialog_content">
+                <div class="logo"></div>
+                <h2 class="dialog_title">Sign Up</h2>
+                <input type="text"
+                       class="dialog_input"
+                       placeholder="Your name">
+                <input type="text"
+                       class="dialog_input"
+                       placeholder="Your e-mail">
+                <input type="text"
+                       class="dialog_input"
+                       placeholder="Password">
+                <input type="text"
+                       class="dialog_input"
+                       placeholder="Repeat Password">
+                <a href="#"
+                   class="dialog_button">Sign up</a>
+                <div class="dialog_social">
+                    <span>Or Sign Up with</span>
+                    <a href="#"
+                       class="googlePlus fab fa-google-plus-square"></a>
+                    <a href="#"
+                       class="facebook fab fa-facebook-square"></a>
+                    <a href="#"
+                       class="twitter fab fa-twitter-square"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
