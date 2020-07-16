@@ -15,6 +15,7 @@ a.button {
     padding: 10px 20px;
     font-weight: bold;
     display: inline-block;
+    text-transform: uppercase;
 }
 
 .avatar {
@@ -1113,7 +1114,6 @@ a.comments_loadMore {
     display: block;
     width: fit-content;
     margin: 10px auto;
-    text-transform: uppercase;
 }
 
 .subtitle {
@@ -1250,4 +1250,74 @@ a.comments_loadMore {
     padding: 20px;
     border-radius: 10px;
     margin: -10px 0 10px -65px;
+}
+
+
+/* User Profile */
+
+.user_sidebar {
+    width: 29%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.userProfilePanel {
+    text-align: center;
+}
+
+.userProfilePanel .avatar {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+.user_sidebar_edit {
+    position: absolute;
+    background: white;
+    border-radius: 100%;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .3);
+    right: 15px;
+    top: 15px;
+    color: #2bbeb6;
+}
+
+.user_sidebar_username {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.userProfilePanel .button {
+    margin: 0 10px 10px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.sidenav {
+    padding-top: 10px;
+}
+
+.sidenav li {
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.sidenav_active {
+    font-weight: bold;
+}
+
+.sidenav_active a {
+    position: relative;
+}
+
+.sidenav_active a:after {
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #2bbeb6;
+    content: '';
+    width: 130%;
+    bottom: -8px;
 }

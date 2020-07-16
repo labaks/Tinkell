@@ -110,4 +110,12 @@
     .comments_inputBlock input[type="text"] {
         width: 60%;
     }
+    .userProfilePanel .avatar {
+        width: 200px;
+        height: 200px;
+    }
+    .user_sidebar_edit {
+        right: 10px;
+        top: 10px;
+    }
 }
