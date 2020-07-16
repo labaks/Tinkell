@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tinkell | User Settings</title>
+    <link rel="stylesheet"
+          href="../css/styles.css">
+    <link rel="stylesheet"
+          href="../css/styles_media.css">
+    <link rel="stylesheet"
+          href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logoBlock">
+            <div class="logo">
+                <a href="#"
+                   class="logoBlock_link"
+                   onclick="openLogoMenu();"></a>
+                <ul class="logoBlock_menu">
+                    <li><a href="../index.html"
+                           class="logoBlock_menu_home">Home</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_toRead">To read</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_topGroups">Top groups</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_newGroups">New groups</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBlock">
+            <a href="tinkwall.html"
+               class="searchBlock_tinkwall"></a>
+            <div class="searchBlockInputGroup">
+                <input type="text"
+                       placeholder="Search...">
+                <a href="#"
+                   class="fas fa-search"></a>
+            </div>
+            <div class="searchBlock_buttonsBlock">
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons active">Groups</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">To Read</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">All</a>
+            </div>
+        </div>
+        <div class="loginBlock">
+            <a href="#"
+               class="signupButton"
+               onclick="openDialog('signupDialog');">Sign up</a>
+            <a href="#"
+               class="loginButton"
+               onclick="openDialog('loginDialog');">Log in
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#"
+               class="menuBurger fas fa-bars"></a>
+        </div>
+    </div>
+    <div class="settings_wrapper">
+        <div class="settings_panel">
+            <h3 class="settings_panel_title">Settings</h3>
+            <div class="settings_nav">
+                <ul>
+                    <li class="sidenav_active"><a href="#">Account Settings</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="settings_content">
+                <div class="settings_content_block">
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">Account Name</span>
+                        <span class="scbLine_content">Ariel Toubia</span>
+                        <a href="#"
+                           onclick=""
+                           class="scbLine_edit">Change</a>
+                    </div>
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">E-mail Address</span>
+                        <span class="scbLine_content">arieltoubia@gmail.com</span>
+                        <a href="#"
+                           onclick=""
+                           class="scbLine_edit">Change</a>
+                    </div>
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">Password</span>
+                        <a href="#"
+                           onclick=""
+                           class="scbLine_edit escaped">Change Password</a>
+                    </div>
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">Location</span>
+                        <span class="scbLine_content">New York, USA</span>
+                        <a href="#"
+                           onclick=""
+                           class="scbLine_edit">Change</a>
+                    </div>
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">Logout</span>
+                        <a href="#"
+                           onclick=""
+                           class="scbLine_edit escaped">Logout of all other browsers</a>
+                    </div>
+                </div>
+                <div class="settings_content_block">
+                    <h4 class="settings_content_block_title">Connected Accounts</h4>
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">
+                            <i class="googlePlus fab fa-google-plus-square"></i>Google</span>
+                        <span class="scbLine_content">arieltoubia@gmail.com</span>
+                    </div>
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">
+                            <i class="twitter fab fa-twitter-square"></i>Twitter</span>
+                        <a href="#"
+                           onclick=""
+                           class="scbLine_edit escaped">Connect</a>
+                    </div>
+                    <div class="settings_content_block_line">
+                        <span class="scbLine_label">
+                            <i class="facebook fab fa-facebook-square"></i>Facebook</span>
+                        <a href="#"
+                           onclick=""
+                           class="scbLine_edit escaped">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logoBlock">
+            <div class="logo"></div>
+        </div>
+        <div class="footer_linksBlock">
+            <a href="#"
+               class="">Terms of Use</a>
+            <a href="#"
+               class="">Contact us</a>
+            <a href="#">tinkell@tkl.com</a>
+            <div class="footer_social">
+                <a href="#"
+                   class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#"
+                   class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                   class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_subscribeBlock">
+            <span>Subscribe to our newsletter</span>
+            <div class="inputWithIcon">
+                <input type="text"
+                       placeholder="Your Email">
+                <a href="#"
+                   class="inputSubmit fas fa-arrow-right"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

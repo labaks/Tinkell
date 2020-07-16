@@ -758,15 +758,15 @@ a.dialog_button {
     vertical-align: middle;
 }
 
-.dialog_social a.facebook {
+.facebook {
     color: #2e5e97;
 }
 
-.dialog_social a.googlePlus {
+.googlePlus {
     color: #ff481d;
 }
 
-.dialog_social a.twitter {
+.twitter {
     color: #00a0f7;
 }
 
@@ -1320,4 +1320,86 @@ a.comments_loadMore {
     content: '';
     width: 130%;
     bottom: -8px;
+}
+
+/* Settings */
+
+.settings_wrapper {
+    padding: 30px 10% 50px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.settings_panel {
+    width: 80%;
+}
+
+.settings_panel_title {
+    font-size: 36px;
+}
+
+.settings_nav {
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.settings_nav li {
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.settings_content {
+    width: 70%;
+    display: inline-block;
+    font-size: 22px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.settings_content_block_title {
+    margin-bottom: 10px;
+}
+
+.settings_content_block_line {
+    padding: 10px 0;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 10px;
+}
+
+.scbLine_label, .scbLine_content, .scbLine_edit {
+    display: inline-block;
+}
+
+.scbLine_label {
+    width: 30%;
+}
+
+.scbLine_label i {
+    font-size: 22px;
+    padding: 0 5px;
+}
+
+.scbLine_content {
+    width: 50%;
+    font-weight: bold;
+}
+
+a.scbLine_edit {
+    width: 18%;
+    font-size: 18px;
+    color: #2bbeb6;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    font-weight: bold;
+}
+
+a.scbLine_edit:hover {
+    text-decoration: underline;
+}
+
+a.scbLine_edit.escaped {
+    width: auto;
+    text-align: left;
 }

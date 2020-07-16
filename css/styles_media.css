@@ -46,6 +46,9 @@
     .comments_inputBlock input[type="text"] {
         width: 70%;
     }
+    .settings_panel {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -117,5 +120,8 @@
     .user_sidebar_edit {
         right: 10px;
         top: 10px;
+    }
+    .settings_wrapper {
+        padding: 10px 2%;
     }
 }
