@@ -1398,6 +1398,65 @@ a.comments_loadMore {
     bottom: -8px;
 }
 
+.userProfile_blockTitle {
+    margin-top: 0;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.userProfile_blockTitle_searchBlock {
+    border-radius: 20px;
+    padding: 5px 10px 5px 35px;
+    float: right;
+    width: 300px;
+    position: relative;
+    background: white;
+    font-size: 20px;
+}
+
+.userProfile_blockTitle_searchBlock input[type='text'] {
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+}
+
+.userProfile_blockTitle_searchBlock i {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.userProfile_contentPanel {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.userProfile_usersList li {
+    border-bottom: 1px solid #d1d1d1;
+    padding: 15px 20px;
+}
+
+.userProfile_usersList li .avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.usersList_button {
+    font-weight: bold;
+}
+
+.usersList_button:hover {
+    text-decoration: underline;
+}
+
+.userProfile_usersList li span, .userProfile_usersList li a {
+    margin: 0 15px;
+}
+
 /* Settings */
 
 .settings_wrapper {
