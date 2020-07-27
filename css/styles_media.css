@@ -30,6 +30,9 @@
     .pageContent {
         padding: 30px 2%;
     }
+    .tinkwall_createPost input[type='text'] {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -138,5 +141,8 @@
     }
     .settings_wrapper {
         padding: 10px 2%;
+    }
+    .tinkwall_createPost input[type='text'] {
+        width: 75%;
     }
 }

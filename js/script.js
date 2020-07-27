@@ -35,8 +35,25 @@ var setActiveSearchButton = function (e) {
     $(e).addClass('active');
 }
 
-var setActivePaginationPage = function(e) {
+var setActivePaginationPage = function (e) {
     var target = $(e).parent();
     target.siblings().removeClass('activePage');
     target.addClass('activePage');
 }
+
+var admin = true;
+var signedIn = true;
+
+$(document).ready(function () {
+    if (signedIn) {
+        $('.notSignedIn').hide();
+        if (admin) {
+            $('.notAdmin').hide();
+        } else {
+            $('.ifAdmin').hide();
+        }
+    } else {
+        $('.signedIn').hide();
+        $('.ifAdmin').hide();
+    }
+})

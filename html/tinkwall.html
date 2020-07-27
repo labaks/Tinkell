@@ -56,14 +56,14 @@
         </div>
         <div class="loginBlock">
             <a href="#"
-               class="signupButton"
+               class="signupButton notSignedIn"
                onclick="openDialog('signupDialog');">Sign up</a>
             <a href="#"
-               class="loginButton"
+               class="loginButton notSignedIn"
                onclick="openDialog('loginDialog');">Log in
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <div class="loginBlock_signedIn hide">
+            <div class="loginBlock_signedIn signedIn">
                 <a href="#"
                    class="fas fa-pencil-alt"></a>
                 <a href="#"
@@ -83,6 +83,15 @@
     </div>
     <div class="pageContent tinkwall">
         <div class="tinkwall_posts">
+            <div class="tinkwall_createPost post signedIn">
+                <a href="user_profile.html"
+                   style="background-image: url(../img/woman.jpg);"
+                   class="avatar"></a>
+                <input type="text"
+                       placeholder="Create a post">
+                <a href="#"
+                   class="tinkwall_createPost_addImage fas fa-images"></a>
+            </div>
             <div class="post">
                 <div class="post_header">
                     <a href="#"

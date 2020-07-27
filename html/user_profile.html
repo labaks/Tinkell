@@ -56,14 +56,14 @@
         </div>
         <div class="loginBlock">
             <a href="#"
-               class="signupButton"
+               class="signupButton notSignedIn"
                onclick="openDialog('signupDialog');">Sign up</a>
             <a href="#"
-               class="loginButton"
+               class="loginButton notSignedIn"
                onclick="openDialog('loginDialog');">Log in
                 <i class="fas fa-arrow-right"></i>
             </a>
-            <div class="loginBlock_signedIn hide">
+            <div class="loginBlock_signedIn signedIn">
                 <a href="#"
                    class="fas fa-pencil-alt"></a>
                 <a href="#"
@@ -94,8 +94,10 @@
                 <p class="user_sidebar_username">Ariel Toubia</p>
                 <a href="#"
                    class="button">New post</a>
+                <a href="#"
+                   class="button ifAdmin">New group</a>
             </div>
-            <ul class="sidenav">
+            <ul class="sidenav notAdmin">
                 <li class="sidenav_active"><a href="#"
                        class="sidenav_item">My Posts</a>
                 </li>
@@ -116,6 +118,26 @@
                 </li>
                 <li><a href="#"
                        class="sidenav_item">My Profile Review</a>
+                </li>
+            </ul>
+            <ul class="sidenav ifAdmin">
+                <li class="sidenav_active"><a href="#"
+                       class="sidenav_item">My Posts</a>
+                </li>
+                <li><a href="#"
+                       class="sidenav_item">New Users & Users</a>
+                </li>
+                <li><a href="#"
+                       class="sidenav_item">Following Groups</a>
+                </li>
+                <li><a href="#"
+                       class="sidenav_item">New Groups & all Groups</a>
+                </li>
+                <li><a href="#"
+                       class="sidenav_item">New Posts In Groups</a>
+                </li>
+                <li><a href="#"
+                       class="sidenav_item">To Read-Activity</a>
                 </li>
             </ul>
         </div>
