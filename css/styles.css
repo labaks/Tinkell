@@ -45,7 +45,7 @@ body {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /* Header */
@@ -242,13 +242,58 @@ a.loginButton, a.loginButton:visited, a.loginButton:hover {
     right: 7px;
 }
 
+.loginBlock_signedIn {
+    display: inline-block;
+}
+
+.loginBlock_signedIn a {
+    font-size: 19px;
+    margin: 0;
+    padding: 7px;
+    border-radius: 100%;
+}
+
+.loginBlock_signedIn a.far {
+    font-weight: normal;
+}
+
+.loginBlock_signedIn .fa-envelope {
+    position: relative;
+}
+
+.loginBlock_signedIn .fa-envelope span {
+    position: absolute;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    padding: 2px;
+    top: 0;
+    right: 0;
+    width: 12px;
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+}
+
+a.loginBlock_userButton {
+    border: 1px solid #d1d1d1;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 5px 10px 5px 5px;
+    text-transform: none;
+}
+
+.loginBlock_userButton span {
+    margin-right: 5px;
+}
+
 a.menuBurger {
     font-size: 19px;
     padding: 8px 10px;
     border-radius: 100%;
 }
 
-a.menuBurger:hover {
+a.menuBurger:hover, .loginBlock_signedIn a:hover {
     background: #f1f1f1;
 }
 
@@ -1291,7 +1336,7 @@ a.comments_loadMore {
 }
 
 .userProfilePanel .button {
-    margin: 0 10px 10px;
+    margin: 0 10px 20px;
     width: 80%;
     box-sizing: border-box;
 }

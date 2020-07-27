@@ -8,6 +8,12 @@
     .loginBlock a {
         margin: 0 10px;
     }
+    .loginBlock_signedIn a {
+        margin: 0 -5px 0 0;
+    }
+    a.menuBurger {
+        margin: 0  3px;
+    }
     .tags {
         width: 74%;
     }
@@ -27,11 +33,17 @@
 }
 
 @media only screen and (max-width: 1280px) {
+    .searchBlock {
+        width: 55%;
+    }
     .searchBlockInputGroup {
-        width: 62%;
+        width: 60%;
     }
     .searchBlock_buttonsBlock {
-        width: 37%;
+        width: 39%;
+    }
+    a.loginBlock_userButton {
+        margin-left: 10px;
     }
     a.timeRangeFilter_button {
         padding: 10px 30px;
@@ -53,7 +65,7 @@
 
 @media only screen and (max-width: 1024px) {
     .searchBlock {
-        width: 55%;
+        width: 53%;
     }
     .searchBlock:before {
         height: 30px;
@@ -73,6 +85,9 @@
     }
     .loginBlock a {
         margin: 0 3px;
+    }
+    .loginBlock_signedIn a {
+        margin: 0 -5px 0 0;
     }
     .logo {
         width: 160px;
