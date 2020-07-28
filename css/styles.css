@@ -1492,6 +1492,53 @@ a.group_content_title:hover {
     margin: 10px 0;
 }
 
+.customizeProfile_sectionTitle {
+    width: 80%;
+    font-weight: bold;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 10px 0;
+    margin: 0 0 20px;
+}
+
+.customizeProfile_input {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    margin: 0 0 20px;
+    outline: none;
+}
+
+textarea.customizeProfile_input {
+    resize: none;
+    height: 100px;
+}
+
+.customizeProfile_profileImageWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.customizeProfile_profileImage {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.customizeProfile_addImage {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 100%;
+    width: 25px;
+    text-align: center;
+}
+
 /* Settings */
 
 .settings_wrapper {
