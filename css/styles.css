@@ -789,8 +789,6 @@ a.dialog_button {
     font-size: 12px;
 }
 
-.dialog_social {}
-
 .dialog_social span {
     font-size: 14px;
     margin-right: 10px;
@@ -925,8 +923,6 @@ a.tinkwall_createPost_addImage:hover {
     color: #7d7d7d;
     margin-right: 5px;
 }
-
-.post_content {}
 
 .post_content_title {
     margin: 0 0 15px;
@@ -1079,14 +1075,6 @@ a.followGroupButton {
     color: #2bbeb6;
 }
 
-.chosenArticle_text {
-
-}
-
-.comments {
-
-}
-
 .comments_title {
     color: #959595;
     font-weight: bold;
@@ -1129,10 +1117,6 @@ a.followGroupButton {
 .comments_inputBlock_button.loginButton,
 .comments_inputBlock_button.loginButton:hover {
     padding: 10px 20px;
-}
-
-.comments_commentsList {
-    
 }
 
 .comment {
@@ -1327,7 +1311,6 @@ a.comments_loadMore {
     border-radius: 10px;
     margin: -10px 0 10px -65px;
 }
-
 
 /* User Profile */
 
