@@ -1482,6 +1482,16 @@ a.group_content_title:hover {
     text-decoration: underline;
 }
 
+.tinkwall_posts .article {
+    width: 40%;
+    display: inline-block;
+    margin: 0 10px 30px;
+}
+
+.tinkwall_posts .article_title {
+    margin: 10px 0;
+}
+
 /* Settings */
 
 .settings_wrapper {
