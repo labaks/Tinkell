@@ -12,7 +12,7 @@ a.button {
     border-radius: 20px;
     background: #2bbeb6;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 16px;
     font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
@@ -139,7 +139,7 @@ body {
 }
 
 .searchBlock {
-    width: 60%;
+    width: 55%;
     display: inline-block;
     position: relative;
 }
@@ -168,11 +168,12 @@ body {
     background: #f4f4f4;
     position: relative;
     display: inline-block;
-    width: 66%;
+    width: 59%;
     padding: 8px 55px 8px 20px;
     border-radius: 20px 0 0 20px;
     border-right: 1px solid #d1d1d1;
     box-sizing: border-box;
+    vertical-align: top;
 }
 
 .searchBlockInputGroup .fa-search {
@@ -193,7 +194,7 @@ body {
     border-left: 1px solid #d1d1d1;
     margin-left: -4px;
     text-align: right;
-    width: 33%;
+    width: 40%;
     box-sizing: border-box;
 }
 
@@ -201,7 +202,7 @@ body {
     display: inline-block;
     font-size: 16px;
     line-height: 16px;
-    padding: 4px 16px;
+    padding: 4px 12px;
     border-radius: 16px;
 }
 
@@ -853,7 +854,7 @@ a.dialog_button {
 }
 
 .tinkwall_createPost input[type='text'] {
-    width: 85%;
+    width: 82%;
     border-radius: 10px;
     padding: 10px;
     font-size: 16px;
@@ -1602,4 +1603,191 @@ a.scbLine_edit:hover {
 a.scbLine_edit.escaped {
     width: auto;
     text-align: left;
+}
+
+/* New post */
+
+.createPost_header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 auto;
+    width: 40%;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: .5em;
+}
+
+.chooseGroup_select {
+    margin: 10px auto;
+    display: block;
+}
+
+.newPostForm {
+    width: 50%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
+}
+
+.newPostForm_header {
+    overflow: hidden;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.newPostForm_header_btn {
+    width: 33%;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    float: left;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.newPostForm_header_btn:first-child {
+    border-left: none;
+    border-radius: 10px 0 0 0;
+}
+
+.newPostForm_header_btn.active {
+    background: #2bbeb6;
+    border-color: #2bbeb6;
+    color: white;
+}
+
+.newPostForm_title {
+    margin: 10px 20px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+}
+
+.newPostForm_title input {
+    padding: 0;
+    border: none;
+    width: 90%;
+    outline: none;
+}
+
+.newPostForm_title_counter {
+    position: absolute;
+    right: 10px;
+}
+
+.newPostForm_body {
+    border: 1px solid #d4d4d4;
+    margin: 10px 20px;
+    border-radius: 20px;
+    padding: 10px 10px 0;
+}
+
+.newPostForm_body textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+.newPostForm_body_footer {
+    overflow: hidden;
+    padding: 5px;
+}
+
+.newPostForm_body_footer .button {
+    float: right;
+    padding: 6px 26px;
+    margin-left: 10px;
+}
+
+.newPostForm_body_footer .cancel {
+    background: white;
+    border: 1px solid #2bbeb6;
+    color: #2bbeb6;
+}
+
+.newPostForm_footer {
+    padding: 0 20px 10px;
+}
+
+.newPostForm_footer a {
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.newPostForm_footer a:hover {
+    background: #d4d4d4;
+}
+
+#tagsDialog {
+    display: block;
+}
+
+#tagsDialog .dialog {
+    background: white;
+    width: 50%;
+    padding: 0;
+}
+
+.tagsDialog_header {
+    border-bottom: 1px solid #d4d4d4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 14px;
+    position: relative;
+}
+
+.tagsDialog_header:before {
+    display: block;
+    content: "\f002";
+    position: absolute;
+    left: 20px;
+    font-family: "Font Awesome 5 Free";
+    color: #999;
+}
+
+#tagsDialog .tagsBlock {
+    padding: 10px 20px 0;
+    border: none;
+}
+
+.dialog .tags {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.dialog .tagButton {
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.dialog .tagButton:hover {
+    border-radius: 28px;
+}
+
+.tagsDialog_footer {
+    padding: 0 25px 20px;
+    overflow: hidden;    
+}
+
+.tagsDialog_footer .button {
+    width: 20%;
+    text-align: center;
+    padding: 18px;
+    border-radius: 30px;
+}
+
+.leftBtn {
+    float: left;
+}
+
+.rightBtn {
+    float: right;
 }

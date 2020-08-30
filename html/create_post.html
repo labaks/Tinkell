@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tinkell | Wall</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_media.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logoBlock">
+            <div class="logo">
+                <a href="#" class="logoBlock_link" onclick="openLogoMenu();"></a>
+                <ul class="logoBlock_menu">
+                    <li><a href="../index.html" class="logoBlock_menu_home">Home</a></li>
+                    <li><a href="#" class="logoBlock_menu_toRead">To read</a></li>
+                    <li><a href="#" class="logoBlock_menu_topGroups">Top groups</a></li>
+                    <li><a href="#" class="logoBlock_menu_newGroups">New groups</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBlock">
+            <a href="tinkwall.html" class="searchBlock_tinkwall"></a>
+            <div class="searchBlockInputGroup">
+                <input type="text" placeholder="Search...">
+                <a href="#" class="fas fa-search"></a>
+            </div>
+            <div class="searchBlock_buttonsBlock">
+                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons active">Groups</a>
+                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">To Read</a>
+                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">All</a>
+            </div>
+        </div>
+        <div class="loginBlock">
+            <a href="#" class="signupButton notSignedIn" onclick="openDialog('signupDialog');">Sign up</a>
+            <a href="#" class="loginButton notSignedIn" onclick="openDialog('loginDialog');">Log in
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="loginBlock_signedIn signedIn">
+                <a href="#" class="fas fa-pencil-alt"></a>
+                <a href="#" class="far fa-bell"></a>
+                <a href="#" class="far fa-envelope"><span>9</span></a>
+                <a href="#" class="loginBlock_userButton">
+                    <span style="background-image: url(../img/woman.jpg);" class="avatar"></span>
+                    Ariel Toubia
+                </a>
+            </div>
+            <a href="#" class="menuBurger fas fa-bars"></a>
+        </div>
+    </div>
+    <div class="pageContent tinkwall">
+        <p class="createPost_header">Create a Post & Group</p>
+        <select class="chooseGroup_select">
+            <option>Choose a group</option>
+        </select>
+        <div class="newPostForm">
+            <div class="newPostForm_header">
+                <a href="#" class="newPostForm_header_btn active">Create a Post</a>
+                <a href="#" class="newPostForm_header_btn">Create a Group</a>
+            </div>
+            <div class="newPostForm_title">
+                <input type="text" placeholder="Title">
+                <span class="newPostForm_title_counter">0/300</span>
+            </div>
+            <div class="newPostForm_body">
+                <textarea></textarea>
+                <div class="newPostForm_body_footer">
+                    <a href="#" class="button">Post</a>
+                    <a href="#" class="button cancel">Cancel</a>
+                </div>
+            </div>
+            <div class="newPostForm_footer">
+                <a href="#">Attach Image</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logoBlock">
+            <div class="logo"></div>
+        </div>
+        <div class="footer_linksBlock">
+            <a href="#" class="">Terms of Use</a>
+            <a href="#" class="">Contact us</a>
+            <a href="#">tinkell@tkl.com</a>
+            <div class="footer_social">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_subscribeBlock">
+            <span>Subscribe to our newsletter</span>
+            <div class="inputWithIcon">
+                <input type="text" placeholder="Your Email">
+                <a href="#" class="inputSubmit fas fa-arrow-right"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="tagsDialog" class="dialogBackground">
+        <div class="dialog">
+            <p class="tagsDialog_header">Choose Tags</p>
+            <div class="tagsBlock">
+                <ul class="tags">
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                    <li class="tagWrapper">
+                        <a href="#" class="tagButton">Beauty & health</a>
+                    </li>
+                </ul>
+                <div class="sideButtons">
+                    <a href="#" class="leftButton fas fa-arrow-left"></a>
+                    <a href="#" class="rightButton fas fa-arrow-right"></a>
+                </div>
+            </div>
+            <div class="tagsDialog_footer">
+                <a href="#" class="button leftBtn">Add Tags</a>
+                <a href="#" class="button rightBtn">Choose</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
