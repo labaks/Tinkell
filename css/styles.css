@@ -1832,3 +1832,55 @@ a.scbLine_edit.escaped {
 .create_hiddenMenu a:hover {
     background: none;
 }
+
+/* Messages */
+
+.messages_title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #999;
+    margin-bottom: .5em;
+}
+
+.messages_block {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
+    overflow: hidden;
+    height: 600px;
+}
+
+.messages_sidebar {
+    float: left;
+    width: 20%;
+    min-height: 100%;
+    border-right: 1px solid #b4b4b4;
+}
+
+.messSide_searchWrapper {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.messSide_searchWrapper a {
+    position: absolute;
+}
+
+.messSide_searchWrapper input {
+    outline: none;
+    border: none;
+}
+
+.messages_list {
+    float: left;
+    width: 34%;
+    min-height: 100%;
+    border-right: 1px solid #b4b4b4;
+}
+
+.messages_chat {
+    float: left;
+    width: 45%;
+    min-height: 100%;
+}
