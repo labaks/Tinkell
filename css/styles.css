@@ -1791,3 +1791,44 @@ a.scbLine_edit.escaped {
 .rightBtn {
     float: right;
 }
+
+.createHiddenMenu_btn {
+    position: relative;
+}
+
+.createHiddenMenu_btn:hover .create_hiddenMenu {
+    display: block;
+}
+
+.create_hiddenMenu {
+    display: none;
+    font-family: Montserrat;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+    padding: 8px 0;
+    top: -8px;
+    left: -8px;
+    z-index: 999;
+}
+
+.create_hiddenMenu span {
+    padding: 0 8px 8px;
+    display: block;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.create_hiddenMenu span i {
+    margin-right: 5px;
+}
+
+.create_hiddenMenu a {
+    text-transform: none;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.create_hiddenMenu a:hover {
+    background: none;
+}
