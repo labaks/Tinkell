@@ -1909,7 +1909,7 @@ a.scbLine_edit.escaped {
     position: relative;
 }
 
-.messages_list li.active {
+.messages_list li.active, .messages_list li.read {
     background: #eee;
 }
 
@@ -2029,4 +2029,31 @@ a.scbLine_edit.escaped {
     color: #d4d4d4;
     right: 16px;
     top: 14px;
+}
+
+.newMessage_to {
+    padding: 12px 20px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.newMessage_subject {
+    padding: 20px;
+    height: 425px;
+    box-sizing: border-box;
+}
+
+.newMessage_to span, .newMessage_subject span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newMessage_to input, .newMessage_subject input {
+    background: #eee;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
 }
