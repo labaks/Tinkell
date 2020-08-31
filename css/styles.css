@@ -1408,6 +1408,10 @@ a.user_sidebar_edit {
     font-size: 20px;
 }
 
+.simpleUser .userProfile_blockTitle_searchBlock {
+    float: none;
+}
+
 .userProfile_blockTitle_searchBlock input[type='text'] {
     outline: none;
     background: transparent;
@@ -1427,6 +1431,10 @@ a.user_sidebar_edit {
     background: white;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.simpleUser .userProfile_contentPanel {
+    display: inline-block;
 }
 
 .userProfile_usersList li {
