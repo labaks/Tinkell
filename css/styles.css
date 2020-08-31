@@ -1839,7 +1839,7 @@ a.scbLine_edit.escaped {
     font-size: 2em;
     font-weight: bold;
     color: #999;
-    margin-bottom: .5em;
+    margin: .5em 0;
 }
 
 .messages_block {
@@ -1858,29 +1858,175 @@ a.scbLine_edit.escaped {
 }
 
 .messSide_searchWrapper {
-    padding: 20px;
+    padding: 20px 10px 20px 50px;
     position: relative;
     border-bottom: 1px solid #d4d4d4;
 }
 
 .messSide_searchWrapper a {
     position: absolute;
+    color: #d4d4d4;
+    font-size: 24px;
+    left: 14px;
+    top: 17px;
 }
 
 .messSide_searchWrapper input {
     outline: none;
     border: none;
+    font-size: 15px;
+}
+
+.messSide_nav {
+    padding: 20px;
+}
+
+.messSide_nav li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+.messSide_nav li.active {
+    border-bottom: 2px solid #2bbeb6;
+}
+
+.messages_list_wrapper {
+    float: left;
+    width: 37%;
+    height: 600px;
+    overflow: auto;
 }
 
 .messages_list {
-    float: left;
-    width: 34%;
-    min-height: 100%;
     border-right: 1px solid #b4b4b4;
+}
+
+.messages_list li {
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #d4d4d4;
+    position: relative;
+}
+
+.messages_list li.active {
+    background: #eee;
+}
+
+.messages_list .avatar {
+    width: 50px;
+    height: 49px;
+}
+
+.message_previewWrapper {
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.message_counter {
+    position: absolute;
+    color: white;
+    background: #fb3e3e;
+    border-radius: 100%;
+    padding: 5px 10px;
+    right: 10px;
+    top: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.message_autorName {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.message_preview {
+    white-space: nowrap;
 }
 
 .messages_chat {
     float: left;
-    width: 45%;
+    width: 42%;
     min-height: 100%;
+}
+
+.messages_chat_title {
+    font-weight: bold;
+    padding: 35px 30px;
+    display: block;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.messages_chat_content {
+    height: 425px;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.messages_chat_content .mess {
+    margin-bottom: 10px;
+    padding: 0 10px 0 30px;
+}
+
+.messages_chat_content .mess.my {
+    padding: 0 0 0 40px;
+}
+
+.mess_name {
+    margin-bottom: 8px;
+    margin-left: -30px;
+    font-weight: bold;
+}
+
+.mess_name .avatar {
+    margin-right: 5px;
+}
+
+.mess .mess_content {
+    border-radius: 10px;
+    background: #eee;
+    padding: 10px;
+}
+
+.mess.my .mess_content {
+    background: #2bbeb6;
+    color: white;
+}
+
+.messages_chat_reply {
+    padding: 12px 40px 12px 20px;
+    margin: 20px;
+    background: #eee;
+    border-radius: 20px;
+    position: relative;
+}
+
+.messages_chat_reply:after {
+    display: block;
+    content: '';
+    position: absolute;
+    border-left: 1px solid #d4d4d4;
+    height: 44px;
+    right: 40px;
+    top: 0;
+}
+
+.messages_chat_reply input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+.messages_chat_reply a {
+    position: absolute;
+    color: #d4d4d4;
+    right: 16px;
+    top: 14px;
 }

@@ -4,9 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Tinkell | Messages</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/styles_media.css">
-    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet"
+          href="../css/styles.css">
+    <link rel="stylesheet"
+          href="../css/styles_media.css">
+    <link rel="stylesheet"
+          href="../css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/script.js"></script>
 </head>
@@ -15,42 +18,72 @@
     <div class="header">
         <div class="logoBlock">
             <div class="logo">
-                <a href="#" class="logoBlock_link" onclick="openLogoMenu();"></a>
+                <a href="#"
+                   class="logoBlock_link"
+                   onclick="openLogoMenu();"></a>
                 <ul class="logoBlock_menu">
-                    <li><a href="../index.html" class="logoBlock_menu_home">Home</a></li>
-                    <li><a href="#" class="logoBlock_menu_toRead">To read</a></li>
-                    <li><a href="#" class="logoBlock_menu_topGroups">Top groups</a></li>
-                    <li><a href="#" class="logoBlock_menu_newGroups">New groups</a></li>
+                    <li><a href="../index.html"
+                           class="logoBlock_menu_home">Home</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_toRead">To read</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_topGroups">Top groups</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_newGroups">New groups</a></li>
                 </ul>
             </div>
         </div>
         <div class="searchBlock">
-            <a href="tinkwall.html" class="searchBlock_tinkwall"></a>
+            <a href="tinkwall.html"
+               class="searchBlock_tinkwall"></a>
             <div class="searchBlockInputGroup">
-                <input type="text" placeholder="Search...">
-                <a href="#" class="fas fa-search"></a>
+                <input type="text"
+                       placeholder="Search...">
+                <a href="#"
+                   class="fas fa-search"></a>
             </div>
             <div class="searchBlock_buttonsBlock">
-                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons active">Groups</a>
-                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">To Read</a>
-                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">All</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons active">Groups</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">To Read</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">All</a>
             </div>
         </div>
         <div class="loginBlock">
-            <a href="#" class="signupButton notSignedIn" onclick="openDialog('signupDialog');">Sign up</a>
-            <a href="#" class="loginButton notSignedIn" onclick="openDialog('loginDialog');">Log in
+            <a href="#"
+               class="signupButton notSignedIn"
+               onclick="openDialog('signupDialog');">Sign up</a>
+            <a href="#"
+               class="loginButton notSignedIn"
+               onclick="openDialog('loginDialog');">Log in
                 <i class="fas fa-arrow-right"></i>
             </a>
             <div class="loginBlock_signedIn signedIn">
-                <a href="#" class="fas fa-pencil-alt"></a>
-                <a href="#" class="far fa-bell"></a>
-                <a href="#" class="far fa-envelope"><span>9</span></a>
-                <a href="#" class="loginBlock_userButton">
-                    <span style="background-image: url(../img/woman.jpg);" class="avatar"></span>
+                <div class="createHiddenMenu_btn fas fa-pencil-alt">
+                    <div class="create_hiddenMenu">
+                        <span><i class="fas fa-pencil-alt"></i>Create</span>
+                        <a href="html/create_post.html">Post & Group</a>
+                        <a href="#">To Read</a>
+                    </div>
+                </div>
+                <a href="#"
+                   class="far fa-bell"></a>
+                <a href="#"
+                   class="far fa-envelope"><span>9</span></a>
+                <a href="#"
+                   class="loginBlock_userButton">
+                    <span style="background-image: url(../img/woman.jpg);"
+                          class="avatar"></span>
                     Ariel Toubia
                 </a>
             </div>
-            <a href="#" class="menuBurger fas fa-bars"></a>
+            <a href="#"
+               class="menuBurger fas fa-bars"></a>
         </div>
     </div>
     <div class="pageContent tinkwall messages">
@@ -58,31 +91,108 @@
         <div class="messages_block">
             <div class="messages_sidebar">
                 <div class="messSide_searchWrapper">
-                    <a href="#" class="fas fa-search"></a>
-                    <input type="text" placeholder="Search...">
+                    <a href="#"
+                       class="fas fa-search"></a>
+                    <input type="text"
+                           placeholder="Search...">
                 </div>
                 <ul class="messSide_nav">
-                    <li><a href="#">Messages</a></li>
+                    <li class="active"><a href="#">Messages</a></li>
                     <li><a href="#">Sent</a></li>
                     <li><a href="#">New Message</a></li>
                 </ul>
             </div>
-            <ul class="messages_list">
-                <li>
-                    <div class="avatar" style="background-image: url(../img/woman.jpg);"></div>
-                    <span class="message_autorName">peachdreams</span>
-                    <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi
-                        tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pretium dolor eleifend
-                        metus tincidunt hendrerit. Curabitur eu porttitor neque. Donec id vulputate felis, at volutpat
-                        lacus. Nam velit ante, malesuada eu lobortis sit amet, tristique vel nibh.</span>
-                </li>
-            </ul>
+            <div class="messages_list_wrapper">
+                <ul class="messages_list">
+                    <li class="active">
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                    <li>
+                        <div class="avatar"
+                             style="background-image: url(../img/woman.jpg);"></div>
+                        <div class="message_previewWrapper">
+                            <span class="message_autorName">peachdreams</span>
+                            <span class="message_preview">Duis egestas pharetra eros et ornare. Pellentesque habitant morbitristique senectus et netus et malesuada fames ac turpis egestas.</span>
+                        </div>
+                        <div class="message_counter">1</div>
+                    </li>
+                </ul>
+            </div>
             <div class="messages_chat">
                 <span class="messages_chat_title">peachdreams</span>
                 <ul class="messages_chat_content">
                     <li class="mess">
                         <div class="mess_name">
-                            <div class="avatar" style="background-image: url(../img/woman.jpg);"></div>
+                            <div class="avatar"
+                                 style="background-image: url(../img/woman.jpg);"></div>
                             <span>peachdreams</span>
                         </div>
                         <div class="mess_content">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi
@@ -102,7 +212,8 @@
                     </li>
                     <li class="mess">
                         <div class="mess_name">
-                            <div class="avatar" style="background-image: url(../img/woman.jpg);"></div>
+                            <div class="avatar"
+                                 style="background-image: url(../img/woman.jpg);"></div>
                             <span>peachdreams</span>
                         </div>
                         <div class="mess_content">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi
@@ -114,8 +225,10 @@
                     </li>
                 </ul>
                 <div class="messages_chat_reply">
-                    <input type="text" placeholder="Reply">
-                    <a href="#" class="fas fa-plus"></a>
+                    <input type="text"
+                           placeholder="Reply">
+                    <a href="#"
+                       class="fas fa-plus"></a>
                 </div>
             </div>
         </div>
@@ -125,20 +238,27 @@
             <div class="logo"></div>
         </div>
         <div class="footer_linksBlock">
-            <a href="#" class="">Terms of Use</a>
-            <a href="#" class="">Contact us</a>
+            <a href="#"
+               class="">Terms of Use</a>
+            <a href="#"
+               class="">Contact us</a>
             <a href="#">tinkell@tkl.com</a>
             <div class="footer_social">
-                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#"
+                   class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#"
+                   class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                   class="instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer_subscribeBlock">
             <span>Subscribe to our newsletter</span>
             <div class="inputWithIcon">
-                <input type="text" placeholder="Your Email">
-                <a href="#" class="inputSubmit fas fa-arrow-right"></a>
+                <input type="text"
+                       placeholder="Your Email">
+                <a href="#"
+                   class="inputSubmit fas fa-arrow-right"></a>
             </div>
         </div>
     </div>

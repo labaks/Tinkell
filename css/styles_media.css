@@ -1,3 +1,31 @@
+@media only screen and (max-width: 1600px) {
+    .timeRangeFilter {
+        width: 56%;
+    }
+    .blockTitleWithFilter {
+        width: 43%;
+    }
+
+}
+@media only screen and (max-width: 1440px) {
+    #tagsDialog .dialog {
+        width: 60%;
+    }
+    .searchBlockInputGroup {
+        width: 56%;
+    }
+    .searchBlock_buttonsBlock {
+        width: 43%;
+    }
+    .searchBlock {
+        width: 54%;
+    }
+    a.timeRangeFilter_button {
+        padding: 10px 32px;
+    }
+
+
+}
 @media only screen and (max-width: 1366px) {
     .header {
         padding: 20px 2%;
@@ -153,5 +181,11 @@
     }
     .userProfile_usersList li span, .userProfile_usersList li a {
         font-size: 12px;
+    }
+    #tagsDialog .dialog {
+        width: 70%;
+    }
+    .dialog .tagButton {
+        font-size: 16px;
     }
 }
