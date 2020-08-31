@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tinkell | comments</title>
+    <link rel="stylesheet"
+          href="../../css/styles.css">
+    <link rel="stylesheet"
+          href="../../css/styles_media.css">
+    <link rel="stylesheet"
+          href="../../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logoBlock">
+            <div class="logo">
+                <a href="#"
+                   class="logoBlock_link"
+                   onclick="openLogoMenu();"></a>
+                <ul class="logoBlock_menu">
+                    <li><a href="../../index.html"
+                           class="logoBlock_menu_home">Home</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_toRead">To read</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_topGroups">Top groups</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_newGroups">New groups</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBlock">
+            <a href="../tinkwall.html"
+               class="searchBlock_tinkwall"></a>
+            <div class="searchBlockInputGroup">
+                <input type="text"
+                       placeholder="Search...">
+                <a href="#"
+                   class="fas fa-search"></a>
+            </div>
+            <div class="searchBlock_buttonsBlock">
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons active">Groups</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">To Read</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">All</a>
+            </div>
+        </div>
+        <div class="loginBlock">
+            <a href="#"
+               class="signupButton notSignedIn"
+               onclick="openDialog('signupDialog');">Sign up</a>
+            <a href="#"
+               class="loginButton notSignedIn"
+               onclick="openDialog('loginDialog');">Log in
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="loginBlock_signedIn signedIn">
+                <a href="#"
+                   class="fas fa-pencil-alt"></a>
+                <a href="#"
+                   class="far fa-bell"></a>
+                <a href="#"
+                   class="far fa-envelope"><span>9</span></a>
+                <a href="#"
+                   class="loginBlock_userButton">
+                    <span style="background-image: url(../../img/woman.jpg);"
+                          class="avatar"></span>
+                    Ariel Toubia
+                </a>
+            </div>
+            <a href="#"
+               class="menuBurger fas fa-bars"></a>
+        </div>
+    </div>
+    <div class="pageContent tinkwall">
+        <div class="user_sidebar">
+            <div class="tinkwall_sidebar_panel userProfilePanel">
+                <div class="sidebar_panel_title">
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);">
+                    </div>
+                </div>
+                <p class="user_sidebar_registered">Registered 01.07.2020</p>
+                <p class="user_sidebar_username">Ariel Toubia</p>
+                <div class="user_sidebar_buttonsBlock">
+                    <a href="#"
+                       class="button">Follow</a>
+                    <a href="#"
+                       class="button ifAdmin">Message</a>
+                </div>
+            </div>
+            <ul class="sidenav">
+                <li><a href="overview.html"
+                       class="sidenav_item">Overview</a>
+                </li>
+                <li><a href="posts.html"
+                       class="sidenav_item">Posts</a>
+                </li>
+                <li><a href="groups.html"
+                       class="sidenav_item">Groups</a>
+                </li>
+                <li><a href="following_groups.html"
+                       class="sidenav_item">Following Groups</a>
+                </li>
+                <li class="sidenav_active"><a href="comments.html"
+                       class="sidenav_item">Comments</a>
+                </li>
+                <li><a href="likes.html"
+                       class="sidenav_item">Likes</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tinkwall_posts">
+            <div class="comBlock">
+                <div class="comBlock_header">
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_header_name">Ariel</span>
+                    <span class="comBLock_header_date">1 month ago</span>
+                </div>
+                <div class="comBlock_content">
+                    <span>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</span>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="comBlock_footer">
+                    <span class="comBlock_footer_groupName">No heat straightening</span>
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_footer_by">by peachdreams</span>
+                </div>
+            </div>
+            <div class="comBlock">
+                <div class="comBlock_header">
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_header_name">Ariel</span>
+                    <span class="comBLock_header_date">1 month ago</span>
+                </div>
+                <div class="comBlock_content">
+                    <span>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</span>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="comBlock_footer">
+                    <span class="comBlock_footer_groupName">No heat straightening</span>
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_footer_by">by peachdreams</span>
+                </div>
+            </div>
+            <div class="comBlock">
+                <div class="comBlock_header">
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_header_name">Ariel</span>
+                    <span class="comBLock_header_date">1 month ago</span>
+                </div>
+                <div class="comBlock_content">
+                    <span>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</span>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="comBlock_footer">
+                    <span class="comBlock_footer_groupName">No heat straightening</span>
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_footer_by">by peachdreams</span>
+                </div>
+            </div>
+            <div class="comBlock">
+                <div class="comBlock_header">
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_header_name">Ariel</span>
+                    <span class="comBLock_header_date">1 month ago</span>
+                </div>
+                <div class="comBlock_content">
+                    <span>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</span>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="comBlock_footer">
+                    <span class="comBlock_footer_groupName">No heat straightening</span>
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_footer_by">by peachdreams</span>
+                </div>
+            </div>
+            <div class="comBlock">
+                <div class="comBlock_header">
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_header_name">Ariel</span>
+                    <span class="comBLock_header_date">1 month ago</span>
+                </div>
+                <div class="comBlock_content">
+                    <span>Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus.</span>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="comBlock_footer">
+                    <span class="comBlock_footer_groupName">No heat straightening</span>
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);"></div>
+                    <span class="comBlock_footer_by">by peachdreams</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logoBlock">
+            <div class="logo"></div>
+        </div>
+        <div class="footer_linksBlock">
+            <a href="#"
+               class="">Terms of Use</a>
+            <a href="#"
+               class="">Contact us</a>
+            <a href="#">tinkell@tkl.com</a>
+            <div class="footer_social">
+                <a href="#"
+                   class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#"
+                   class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                   class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_subscribeBlock">
+            <span>Subscribe to our newsletter</span>
+            <div class="inputWithIcon">
+                <input type="text"
+                       placeholder="Your Email">
+                <a href="#"
+                   class="inputSubmit fas fa-arrow-right"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

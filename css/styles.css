@@ -2067,3 +2067,45 @@ a.scbLine_edit.escaped {
     width: 90%;
     box-sizing: border-box;
 }
+
+.comBlock {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
+}
+
+.comBlock_header_name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comBLock_header_date {
+    color: #7d7d7d;
+}
+
+.comBlock_content {
+    padding: 10px 50px;
+}
+
+.comBlock_content span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.comBlock_content a {
+    font-weight: bold;
+    color: #2bbeb6;
+    font-size: 13px;
+}
+
+.comBlock_footer {
+    text-align: right;
+    font-weight: bold;
+    color: #7d7d7d;
+}
+
+.comBlock_footer .avatar {
+    margin: 0 10px;
+}
