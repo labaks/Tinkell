@@ -1334,7 +1334,7 @@ a.comments_loadMore {
     margin: 10px;
 }
 
-.user_sidebar_edit {
+a.user_sidebar_edit {
     position: absolute;
     background: white;
     border-radius: 100%;
@@ -1354,6 +1354,16 @@ a.comments_loadMore {
     margin: 0 10px 20px;
     width: 80%;
     box-sizing: border-box;
+}
+
+.user_sidebar_buttonsBlock {
+    padding: 0 10px 20px 10px;
+}
+
+.user_sidebar_buttonsBlock .button {
+    margin: 10px 8px;
+    width: 40%;
+    white-space: nowrap;
 }
 
 .sidenav {
