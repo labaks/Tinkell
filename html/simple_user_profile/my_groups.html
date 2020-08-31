@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tinkell | My Groups</title>
+    <link rel="stylesheet"
+          href="../../css/styles.css">
+    <link rel="stylesheet"
+          href="../../css/styles_media.css">
+    <link rel="stylesheet"
+          href="../../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logoBlock">
+            <div class="logo">
+                <a href="#"
+                   class="logoBlock_link"
+                   onclick="openLogoMenu();"></a>
+                <ul class="logoBlock_menu">
+                    <li><a href="../../index.html"
+                           class="logoBlock_menu_home">Home</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_toRead">To read</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_topGroups">Top groups</a></li>
+                    <li><a href="#"
+                           class="logoBlock_menu_newGroups">New groups</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBlock">
+            <a href="../tinkwall.html"
+               class="searchBlock_tinkwall"></a>
+            <div class="searchBlockInputGroup">
+                <input type="text"
+                       placeholder="Search...">
+                <a href="#"
+                   class="fas fa-search"></a>
+            </div>
+            <div class="searchBlock_buttonsBlock">
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons active">Groups</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">To Read</a>
+                <a href="#"
+                   onclick="setActiveSearchButton(this)"
+                   class="searchBlockButtons">All</a>
+            </div>
+        </div>
+        <div class="loginBlock">
+            <a href="#"
+               class="signupButton notSignedIn"
+               onclick="openDialog('signupDialog');">Sign up</a>
+            <a href="#"
+               class="loginButton notSignedIn"
+               onclick="openDialog('loginDialog');">Log in
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="loginBlock_signedIn signedIn">
+                <a href="#"
+                   class="fas fa-pencil-alt"></a>
+                <a href="#"
+                   class="far fa-bell"></a>
+                <a href="#"
+                   class="far fa-envelope"><span>9</span></a>
+                <a href="#"
+                   class="loginBlock_userButton">
+                    <span style="background-image: url(../../img/woman.jpg);"
+                          class="avatar"></span>
+                    Ariel Toubia
+                </a>
+            </div>
+            <a href="#"
+               class="menuBurger fas fa-bars"></a>
+        </div>
+    </div>
+    <div class="pageContent tinkwall">
+        <div class="user_sidebar">
+            <div class="tinkwall_sidebar_panel userProfilePanel">
+                <div class="sidebar_panel_title">
+                    <div class="avatar"
+                         style="background-image: url(../../img/woman.jpg);">
+                        <a href="#"
+                           class="user_sidebar_edit fas fa-pencil-alt"></a>
+                    </div>
+                </div>
+                <p class="user_sidebar_username">Ariel Toubia</p>
+                <a href="../create_post.html"
+                   class="button">New post & group</a>
+            </div>
+            <ul class="sidenav">
+                <li><a href="my_posts.html"
+                       class="sidenav_item">My Posts</a>
+                </li>
+                <li class="sidenav_active"><a href="my_groups.html"
+                       class="sidenav_item">My Groups</a>
+                </li>
+                <li><a href="following_groups.html"
+                       class="sidenav_item">Following Groups</a>
+                </li>
+                <li><a href="favorites.html"
+                       class="sidenav_item">Favorites</a>
+                </li>
+                <li><a href="comments.html"
+                       class="sidenav_item">Comments</a>
+                </li>
+                <li><a href="likes.html"
+                       class="sidenav_item">Likes</a>
+                </li>
+                <li><a href="customize_profile.html"
+                       class="sidenav_item">Customize Profile</a>
+                </li>
+                <li><a href="followed_users.html"
+                       class="sidenav_item">Followed Users</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tinkwall_posts">
+            <div class="group">
+                <div class="group_header">
+                    <span class="group_header_tag">Sport</span>
+                    <span>18 June, 2020</span>
+                    <span><i class="fas fa-user-friends"></i>55 000 Members</span>
+                    <span><i class="far fa-eye"></i>600</span>
+                </div>
+                <div class="group_content">
+                    <img src="../../img/5.jpg"
+                         class="group_content_img">
+                    <a href="../chosen_group.html"
+                       class="group_content_title">In at magna ultrices nisi</a>
+                    <span class="group_content_text">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pretium dolor eleifend metus tincidunt hendrerit. Curabitur eu porttitor neque. Donec id vulputate felis, at volutpat lacus. Nam velit ante, malesuada eu lobortis sit amet, tristique vel nibh.</span>
+                </div>
+            </div>
+            <div class="group">
+                <div class="group_header">
+                    <span class="group_header_tag">Sport</span>
+                    <span>18 June, 2020</span>
+                    <span><i class="fas fa-user-friends"></i>55 000 Members</span>
+                    <span><i class="far fa-eye"></i>600</span>
+                </div>
+                <div class="group_content">
+                    <img src="../../img/5.jpg"
+                         class="group_content_img">
+                    <a href="../chosen_group.html"
+                       class="group_content_title">In at magna ultrices nisi</a>
+                    <span class="group_content_text">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pretium dolor eleifend metus tincidunt hendrerit. Curabitur eu porttitor neque. Donec id vulputate felis, at volutpat lacus. Nam velit ante, malesuada eu lobortis sit amet, tristique vel nibh.</span>
+                </div>
+            </div>
+            <div class="group">
+                <div class="group_header">
+                    <span class="group_header_tag">Sport</span>
+                    <span>18 June, 2020</span>
+                    <span><i class="fas fa-user-friends"></i>55 000 Members</span>
+                    <span><i class="far fa-eye"></i>600</span>
+                </div>
+                <div class="group_content">
+                    <img src="../../img/5.jpg"
+                         class="group_content_img">
+                    <a href="../chosen_group.html"
+                       class="group_content_title">In at magna ultrices nisi</a>
+                    <span class="group_content_text">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pretium dolor eleifend metus tincidunt hendrerit. Curabitur eu porttitor neque. Donec id vulputate felis, at volutpat lacus. Nam velit ante, malesuada eu lobortis sit amet, tristique vel nibh.</span>
+                </div>
+            </div>
+            <div class="group">
+                <div class="group_header">
+                    <span class="group_header_tag">Sport</span>
+                    <span>18 June, 2020</span>
+                    <span><i class="fas fa-user-friends"></i>55 000 Members</span>
+                    <span><i class="far fa-eye"></i>600</span>
+                </div>
+                <div class="group_content">
+                    <img src="../../img/5.jpg"
+                         class="group_content_img">
+                    <a href="../chosen_group.html"
+                       class="group_content_title">In at magna ultrices nisi</a>
+                    <span class="group_content_text">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pretium dolor eleifend metus tincidunt hendrerit. Curabitur eu porttitor neque. Donec id vulputate felis, at volutpat lacus. Nam velit ante, malesuada eu lobortis sit amet, tristique vel nibh.</span>
+                </div>
+            </div>
+            <div class="group">
+                <div class="group_header">
+                    <span class="group_header_tag">Sport</span>
+                    <span>18 June, 2020</span>
+                    <span><i class="fas fa-user-friends"></i>55 000 Members</span>
+                    <span><i class="far fa-eye"></i>600</span>
+                </div>
+                <div class="group_content">
+                    <img src="../../img/5.jpg"
+                         class="group_content_img">
+                    <a href="../chosen_group.html"
+                       class="group_content_title">In at magna ultrices nisi</a>
+                    <span class="group_content_text">Duis egestas pharetra eros et ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pretium dolor eleifend metus tincidunt hendrerit. Curabitur eu porttitor neque. Donec id vulputate felis, at volutpat lacus. Nam velit ante, malesuada eu lobortis sit amet, tristique vel nibh.</span>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li class="activePage">
+                    <a href="#"
+                       onclick="setActivePaginationPage(this)">1</a>
+                </li>
+                <li>
+                    <a href="#"
+                       onclick="setActivePaginationPage(this)">2</a>
+                </li>
+                <li>
+                    <a href="#"
+                       onclick="setActivePaginationPage(this)">3</a>
+                </li>
+                <li>
+                    <a href="#"
+                       onclick="setActivePaginationPage(this)">4</a>
+                </li>
+                <li>
+                    <a href="#"
+                       onclick="setActivePaginationPage(this)">5</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logoBlock">
+            <div class="logo"></div>
+        </div>
+        <div class="footer_linksBlock">
+            <a href="#"
+               class="">Terms of Use</a>
+            <a href="#"
+               class="">Contact us</a>
+            <a href="#">tinkell@tkl.com</a>
+            <div class="footer_social">
+                <a href="#"
+                   class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#"
+                   class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                   class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_subscribeBlock">
+            <span>Subscribe to our newsletter</span>
+            <div class="inputWithIcon">
+                <input type="text"
+                       placeholder="Your Email">
+                <a href="#"
+                   class="inputSubmit fas fa-arrow-right"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
