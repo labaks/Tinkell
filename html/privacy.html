@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tinkell | User Settings</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logoBlock">
+            <div class="logo">
+                <a href="#" class="logoBlock_link" onclick="openLogoMenu();"></a>
+                <ul class="logoBlock_menu">
+                    <li><a href="../index.html" class="logoBlock_menu_home">Home</a></li>
+                    <li><a href="#" class="logoBlock_menu_toRead">To read</a></li>
+                    <li><a href="#" class="logoBlock_menu_topGroups">Top groups</a></li>
+                    <li><a href="#" class="logoBlock_menu_newGroups">New groups</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBlock">
+            <a href="tinkwall.html" class="searchBlock_tinkwall"></a>
+            <div class="searchBlockInputGroup">
+                <input type="text" placeholder="Search...">
+                <a href="#" class="fas fa-search"></a>
+            </div>
+            <div class="searchBlock_buttonsBlock">
+                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons active">Groups</a>
+                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">To Read</a>
+                <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">All</a>
+            </div>
+        </div>
+        <div class="loginBlock">
+            <a href="#" class="signupButton notSignedIn" onclick="openDialog('signupDialog');">Sign up</a>
+            <a href="#" class="loginButton notSignedIn" onclick="openDialog('loginDialog');">Log in
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="loginBlock_signedIn signedIn">
+                <a href="#" class="fas fa-pencil-alt"></a>
+                <a href="#" class="far fa-bell"></a>
+                <a href="#" class="far fa-envelope"><span>9</span></a>
+                <a href="#" class="loginBlock_userButton">
+                    <span style="background-image: url(../img/woman.jpg);" class="avatar"></span>
+                    Ariel Toubia
+                </a>
+            </div>
+            <a href="#" class="menuBurger fas fa-bars"></a>
+        </div>
+    </div>
+    <div class="settings_wrapper">
+        <div class="settings_panel">
+            <h3 class="settings_panel_title">Settings</h3>
+            <div class="settings_nav">
+                <ul>
+                    <li><a href="user_settings.html">Account Settings</a></li>
+                    <li class="sidenav_active"><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="settings_content">
+                <div class="settings_content_block">
+                    <div class="checkboxWithLink">
+                        <div class="checkboxWrapper">
+                            <input type="checkbox" id="AllowSearchEngines">
+                            <label for="AllowSearchEngines" class="fas">Allow search engines to index your name.</label>
+                        </div>
+                        <a href="#" class="checkLink">Learn More</a>
+                    </div>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="AllowSeeWriting">
+                        <label for="AllowSeeWriting">Allow other people to see when you are writing an answer</label>
+                    </div>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="personaliseOnLocation">
+                        <label for="personaliseOnLocation">Personalise recommendations based on your general location</label>
+                    </div>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="allowToUseLocation">
+                        <label for="allowToUseLocation">Allow us to use your city, state or country (based on your IP) to recommend better posts and communities</label>
+                    </div>
+                </div>
+                <div class="settings_content_block">
+                    <h4 class="settings_content_block_title settings_content_block_line">Show up in search results</h4>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="AllowEnginesLinkProfile">
+                        <label for="AllowEnginesLinkProfile">Allow search engines like Google to link to your profile in their search results</label>
+                    </div>
+
+                </div>
+                <div class="settings_content_block">
+                    <h4 class="settings_content_block_title settings_content_block_line">Inbox Preferences</h4>
+                    <span class="privacyAdvSpan">Which registered users would you like to receive messages from?</span>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="allowSendMessages">
+                        <label for="allowSendMessages">Allow any person to send me messages</label>
+                    </div>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="allowAdminSendMessages">
+                        <label for="allowAdminSendMessages">Allow any person or admin/moderator of a space I follow to send me messages</label>
+                    </div>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="allowNoOne">
+                        <label for="allowNoOne">Allow no one to send me messages</label>
+                    </div>
+                </div>
+                <div class="settings_content_block">
+                    <h4 class="settings_content_block_title settings_content_block_line">Comment Preferences</h4>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="allowToComment">
+                        <label for="allowToComment">Allow other people to comment on your answers</label>
+                    </div>
+                    <a href="#" class="deactivateAccount">Deactivate account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logoBlock">
+            <div class="logo"></div>
+        </div>
+        <div class="footer_linksBlock">
+            <a href="#" class="">Terms of Use</a>
+            <a href="#" class="">Contact us</a>
+            <a href="#">tinkell@tkl.com</a>
+            <div class="footer_social">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer_subscribeBlock">
+            <span>Subscribe to our newsletter</span>
+            <div class="inputWithIcon">
+                <input type="text" placeholder="Your Email">
+                <a href="#" class="inputSubmit fas fa-arrow-right"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

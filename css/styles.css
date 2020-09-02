@@ -305,7 +305,7 @@ a.menuBurger:hover, .loginBlock_signedIn a:hover {
     padding: 40px 0 20px;
 }
 
-.tags {
+.tags, .tagCategories {
     width: 56%;
     margin: 0 auto 15px;
 }
@@ -330,6 +330,13 @@ a.menuBurger:hover, .loginBlock_signedIn a:hover {
     border-radius: 28px;
     outline: none;
     cursor: pointer;
+}
+
+.tagCategories .tagButton {
+    width: 95.8%;
+    text-align: center;
+    background: #2bbeb6;
+    color: white;
 }
 
 .tagWrapper:hover .tagButton {
@@ -834,6 +841,18 @@ a.dialog_button {
     display: inline-block;
     padding: 0 10px;
     box-sizing: border-box;
+}
+
+.seeAlsoBlock {
+    background: #e4e4e4;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 30px 14%;
+}
+
+.seeAlsoBlock .tinkwall_posts {
+    width: auto;
+    text-align: center;
 }
 
 .tinkwall_sidebar, .chosenArticle_sidebar {
@@ -1490,6 +1509,12 @@ a.group_content_title:hover {
     margin: 0 10px 30px;
 }
 
+.seeAlsoBlock .tinkwall_posts .article {
+    width: 30%;
+    margin: 0 10px 30px;
+    text-align: left;
+}
+
 .tinkwall_posts .article_title {
     margin: 10px 0;
 }
@@ -2116,4 +2141,67 @@ a.scbLine_edit.escaped {
 
 .comBlock_footer .avatar {
     margin: 0 10px;
+}
+
+.checkboxWrapper {
+    margin-bottom: 15px;
+}
+
+.checkboxWrapper input {
+    display: none;    
+}
+
+.checkboxWrapper label {
+    position: relative;
+    padding-left: 30px;
+    font-family: Montserrat;
+    font-weight: normal;
+    line-height: 1;
+    display: inline-block;
+}
+
+.checkboxWrapper label:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2bbeb6;
+    border-radius: 3px;
+    top: 0px;
+    left: 0;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 4px;
+    box-sizing: border-box;
+}
+
+.checkboxWrapper input:checked ~ label:before {
+    content: "\f00c";
+    background: #2bbeb6;
+}
+
+.checkboxWithLink .checkboxWrapper {
+    display: inline-block;
+}
+
+a.checkLink {
+    color: #d4d4d4;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.privacyAdvSpan {
+    display: block;
+    margin: 15px 0;
+}
+
+a.deactivateAccount {
+    text-transform: uppercase;
+    color: red;
+    margin: 30px 0;
+    display: block;
 }

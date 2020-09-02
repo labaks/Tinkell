@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Tinkell | Most Popular To Read</title>
+   <link rel="stylesheet" href="../css/styles.css">
+   <link rel="stylesheet" href="../css/styles_media.css">
+   <link rel="stylesheet" href="../css/all.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="../js/script.js"></script>
+</head>
+
+<body>
+   <div class="header">
+      <div class="logoBlock">
+         <div class="logo">
+            <a href="#" class="logoBlock_link" onclick="openLogoMenu();"></a>
+            <ul class="logoBlock_menu">
+               <li><a href="../index.html" class="logoBlock_menu_home">Home</a></li>
+               <li><a href="#" class="logoBlock_menu_toRead">To read</a></li>
+               <li><a href="#" class="logoBlock_menu_topGroups">Top groups</a></li>
+               <li><a href="#" class="logoBlock_menu_newGroups">New groups</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="searchBlock">
+         <a href="tinkwall.html" class="searchBlock_tinkwall"></a>
+         <div class="searchBlockInputGroup">
+            <input type="text" placeholder="Search...">
+            <a href="#" class="fas fa-search"></a>
+         </div>
+         <div class="searchBlock_buttonsBlock">
+            <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons active">Groups</a>
+            <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">To Read</a>
+            <a href="#" onclick="setActiveSearchButton(this)" class="searchBlockButtons">All</a>
+         </div>
+      </div>
+      <div class="loginBlock">
+         <a href="#" class="signupButton notSignedIn" onclick="openDialog('signupDialog');">Sign up</a>
+         <a href="#" class="loginButton notSignedIn" onclick="openDialog('loginDialog');">Log in
+            <i class="fas fa-arrow-right"></i>
+         </a>
+         <div class="loginBlock_signedIn signedIn">
+            <a href="#" class="fas fa-pencil-alt"></a>
+            <a href="#" class="far fa-bell"></a>
+            <a href="#" class="far fa-envelope"><span>9</span></a>
+            <a href="#" class="loginBlock_userButton">
+               <span style="background-image: url(../img/woman.jpg);" class="avatar"></span>
+               Ariel Toubia
+            </a>
+         </div>
+         <a href="#" class="menuBurger fas fa-bars"></a>
+      </div>
+   </div>
+   <div>
+      <div class="tagsBlock">
+         <div class="tagCategories">
+            <a href="#" class="tagButton">Categories</a>
+         </div>
+         <ul class="tags">
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Beauty & health">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Fashion">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Sport">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Food">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Education">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="News">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Relationship">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Home & Family">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Pregnancy">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Kids">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Entertainment">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <li class="tagWrapper">
+               <input type="button" class="tagButton" value="Shopping">
+               <ul class="subtags">
+                  <li><a href="#" class="subtagButton">Makeup</a></li>
+                  <li><a href="#" class="subtagButton">Skin Care</a></li>
+                  <li><a href="#" class="subtagButton">Hair</a></li>
+                  <li><a href="#" class="subtagButton">Body Care</a></li>
+                  <li><a href="#" class="subtagButton">Dermatology</a></li>
+                  <li><a href="#" class="subtagButton">Aesthetic medicine</a></li>
+                  <li><a href="#" class="subtagButton">Eye care & Beauty</a></li>
+                  <li><a href="#" class="subtagButton">Density</a></li>
+                  <li><a href="#" class="subtagButton">Health problem</a></li>
+                  <li><a href="#" class="subtagButton">Psychologist & Psychiatrist</a></li>
+                  <li><a href="#" class="subtagButton">Depression</a></li>
+               </ul>
+            </li>
+            <div class="clear"></div>
+         </ul>
+         <div class="sideButtons">
+            <a href="#" class="leftButton fas fa-arrow-left"></a>
+            <a href="#" class="rightButton fas fa-arrow-right"></a>
+         </div>
+      </div>
+      <div class="mostPopularBlock contentBlock">
+         <h2 class="blockTitle">Most Popular to Read</h2>
+         <div class="articlesCarousel">
+            <div>
+               <div class="article">
+                  <img class="article_img" src="../img/1.jpg">
+                  <p class="article_title">Cras rhoncus suscipit eros.</p>
+                  <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                     malesuada.</span>
+               </div>
+               <div class="article">
+                  <img class="article_img" src="../img/2.jpg">
+                  <p class="article_title">Cras rhoncus suscipit eros.</p>
+                  <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                     malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis.</span>
+               </div>
+               <div class="article">
+                  <img class="article_img" src="../img/3.jpg">
+                  <p class="article_title">Cras rhoncus suscipit eros.</p>
+                  <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                     malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis.</span>
+               </div>
+            </div>
+            <a href="#" class="leftButton fas fa-arrow-left"></a>
+            <a href="#" class="rightButton fas fa-arrow-right"></a>
+         </div>
+         <div class="mainArticle">
+            <img src="../img/4.jpg" class="mainArticle_img">
+            <div class="mainArticle_textBlock">
+               <p class="mainArticle_title">Quisque eu mollis mauris</p>
+               <p class="mainArticle_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                  malesuada. Duis non tristique dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce
+                  ornare pellentesque posuere. Aliquam accumsan posuere ex vel auctor.
+                  <br />
+                  Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique
+                  dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere.
+                  Aliquam accumsan posuere ex vel auctor.
+                  <br />
+                  Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius malesuada. Duis non tristique
+                  dolor. Sed eget tellus posuere, suscipit velit quis, ornare risus. Fusce ornare pellentesque posuere.
+                  Aliquam accumsan posuere ex vel auctor.
+               </p>
+               <p class="mainArticle_linkWrapper">
+                  <a href="chosen_article.html" class="mainArticle_readLink">Read</a>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="seeAlsoBlock">
+         <div class="tinkwall_posts">
+            <div class="article">
+               <img class="article_img" src="../img/1.jpg">
+               <p class="article_title">Cras rhoncus suscipit eros.</p>
+               <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                  malesuada.</span>
+            </div>
+            <div class="article">
+               <img class="article_img" src="../img/2.jpg">
+               <p class="article_title">Cras rhoncus suscipit eros.</p>
+               <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                  malesuada.</span>
+            </div>
+            <div class="article">
+               <img class="article_img" src="../img/1.jpg">
+               <p class="article_title">Cras rhoncus suscipit eros.</p>
+               <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                  malesuada.</span>
+            </div>
+            <div class="article">
+               <img class="article_img" src="../img/2.jpg">
+               <p class="article_title">Cras rhoncus suscipit eros.</p>
+               <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                  malesuada.</span>
+            </div>
+            <div class="article">
+               <img class="article_img" src="../img/1.jpg">
+               <p class="article_title">Cras rhoncus suscipit eros.</p>
+               <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                  malesuada.</span>
+            </div>
+            <div class="article">
+               <img class="article_img" src="../img/2.jpg">
+               <p class="article_title">Cras rhoncus suscipit eros.</p>
+               <span class="article_text">Vivamus sit amet tincidunt nunc. Nullam egestas nisl eget urna varius
+                  malesuada.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <div class="logoBlock">
+         <div class="logo"></div>
+      </div>
+      <div class="footer_linksBlock">
+         <a href="#" class="">Terms of Use</a>
+         <a href="#" class="">Contact us</a>
+         <a href="#">tinkell@tkl.com</a>
+         <div class="footer_social">
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+         </div>
+      </div>
+      <div class="footer_subscribeBlock">
+         <span>Subscribe to our newsletter</span>
+         <div class="inputWithIcon">
+            <input type="text" placeholder="Your Email">
+            <a href="#" class="inputSubmit fas fa-arrow-right"></a>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
